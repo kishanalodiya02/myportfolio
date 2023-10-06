@@ -1,0 +1,683 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.mainbox {
+    width: 100%;
+    /* padding: 0px 30px 0px 30px; */
+    /* border: 2px solid red; */
+    background-color: black;
+
+}
+
+span {
+    color: orange;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    width: 100%;
+    padding: 20px 0px;
+
+    background-color: black;
+}
+
+.navbar h2 {
+    /* margin-left: 45px; */
+    color: white;
+}
+
+.navbar h2 span {
+    color: orange;
+}
+
+.navbar .first-ul {
+    position: absolute;
+    left: 20vw;
+}
+
+.navbar .first-ul li {
+    display: inline-block;
+    padding: 0px 10px;
+
+}
+
+
+
+
+
+.navbar .first-ul .blog:hover .blog-ul {
+    display: block;
+}
+
+.navbar .first-ul .blog .blog-ul {
+    position: absolute;
+    top: 25px;
+    border-top: 3px solid blue;
+    background-color: white;
+    padding: 10px;
+
+    display: none;
+}
+
+.navbar .first-ul .blog ul li {
+    display: block;
+    padding: 10px;
+}
+
+.navbar .first-ul li a:link {
+
+    text-decoration: none;
+    color: white;
+}
+
+
+.navbar .first-ul li a:visited {
+    color: white;
+}
+
+.navbar .first-ul li a:hover {
+    color: orange;
+}
+
+
+.navbar .icndiv i {
+    padding: 10px 12px;
+    margin-left: 10px;
+    border: 2px solid rgb(224, 221, 221);
+    border-radius: 50%;
+
+    position: relative;
+
+}
+
+.navbar .icndiv {
+    padding-right: 10px;
+}
+
+.navbar .icndiv a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .icndiv a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .icndiv i:hover {
+    transform: rotateY(180deg);
+    transition: 0.5s;
+}
+
+.navbar .icndiv .bagicn {
+
+    padding: 10px 19px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.navbar .icndiv .search-icn:hover {
+    transform: none;
+}
+
+.navbar .icndiv .bagicn:hover {
+    transform: none;
+}
+
+.navbar .icndiv .menu-bar {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar .menu-bar .second-ul {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: gray;
+    padding: 10px;
+    list-style: none;
+
+
+}
+
+
+
+
+/* .navbar .menu-bar:hover .second-ul{display: block;} */
+
+
+
+
+.navbar .menu-bar .second-ul li {
+    border-radius: 10px;
+}
+
+.navbar .menu-bar .second-ul li a:visited {
+    color: white;
+}
+
+.navbar .menu-bar .second-ul li a:link {
+    color: white;
+}
+
+.navbar .menu-bar .second-ul li:hover {
+    background-color: gainsboro;
+    transition: 0.5s;
+
+}
+
+.navbar .menu-bar .second-ul li:hover a {
+    color: black;
+}
+
+.navbar .menu-bar .second-ul .blog:hover .blog-ul {
+    display: block;
+}
+
+.navbar .menu-bar .second-ul .blog-ul li:hover {
+    background-color: gray;
+}
+
+.navbar .menu-bar .second-ul .blog-ul {
+    padding: 10px;
+    list-style: none;
+    display: none;
+}
+
+
+@media screen and (max-width:970px) {
+
+    .navbar .icndiv {
+        /* width: 100%; */
+
+    }
+
+
+
+    .navbar .icndiv .menu-bar {
+        /* float: right; */
+        /* display: inline-block; */
+        display: block;
+
+
+
+    }
+
+    .navbar .first-ul {
+        display: none;
+    }
+
+
+
+
+
+
+    .icndiv .second-ul .close-icn {
+
+        border: none;
+        z-index: 10;
+        float: right;
+        margin-top: -5px;
+        color: white;
+        font-size: 1.5rem;
+
+    }
+
+
+
+
+    .navbar .menu-bar .second-ul {
+        /* visibility: hidden; */
+        /* transform: translateX(120%);*/
+        display: none;
+
+        z-index: 2;
+
+    }
+
+    .dblock {
+        display: block;
+        /* visibility: visible; */
+        /* transform: translateX(0%); */
+        /* transition: 1s; */
+
+    }
+
+}
+
+/* --------------------------------------box1----------------------------------------- */
+.box1 .leftbox {
+    overflow: hidden;
+    background-color: black;
+    padding-left: 0px;
+}
+
+.box1 .leftbox h2 {
+    line-height: 50px;
+    padding-top: 30px;
+    /* padding-left: 30px; */
+    color: white;
+
+    width: fit-content;
+}
+
+.box1 .leftbox h2 span {
+    color: orange;
+}
+
+.box1 .leftbox h2 b {
+    font-size: 2.5rem;
+}
+
+.box1 .leftbox h2 .wbdvp {
+    color: orange;
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    width: fit-content;
+ 
+
+
+}
+
+.box1 .leftbox .movingbox {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    border-left: 5px solid gray;
+    position: absolute;
+    top: 0px;
+
+   
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+
+}
+
+/* .box1 .leftbox .downloadcv {
+    background-color: rgb(229, 255, 0);
+    
+    margin-top: 40px;
+    width: fit-content;
+    padding: 10px;
+}
+
+.box1 .leftbox .downloadcv a:link {
+    color: maroon;
+    text-decoration: none;
+}
+
+.box1 .leftbox .downloadcv a:visited {
+    color: maroon;
+} */
+
+
+.downloadcv {
+    background-color: yellow;
+    /* margin-left: 30px; */
+    margin-top: 40px;
+    width: fit-content;
+    padding: 10px;
+}
+
+.downloadcv a:link {
+    color: maroon;
+    text-decoration: none;
+}
+
+.downloadcv a:visited {
+    color: maroon;
+}
+
+
+
+@keyframes moving {
+    0% {
+        transform: translateX(0%);
+
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+/* -------------------------rightbox--------------------------- */
+.box1 .rightbox {
+
+    background-color: black;
+    background-image: url();
+}
+
+
+/* ---------------------------------------------------box2-------------------------------- */
+.box2 {
+    background-color: black;
+}
+
+.box2 h3 {
+    color: white;
+    /* padding-left: 50px; */
+}
+
+.box2 h1 {
+    color: orange;
+    font-weight: 700;
+    /* padding-left: 50px; */
+}
+
+.box2 .rightbox {
+    color: white;
+}
+
+.box2 .rightbox h2 {
+    color: white;
+    font-weight: 700;
+}
+
+.box2 .rightbox h2 span {
+    color: orange;
+}
+
+.box2 .rightbox p {
+    font-size: 1.2rem;
+}
+
+.box2 .rightboxin i {
+    color: orange;
+    font-size: 1.6rem;
+}
+
+.box2 .rightbox .downloadcv {
+    background-color: rgb(229, 255, 0);
+    /* margin-left: 30px; */
+    margin-top: 40px;
+    width: fit-content;
+    padding: 10px;
+}
+
+
+.box2 .rightbox .downloadcv a:link {
+    color: maroon;
+    text-decoration: none;
+}
+
+.box2 .rightbox .downloadcv a:visited {
+    color: maroon;
+}
+
+/* ---------------------------------------------------box3-------------------------------- */
+.box3 {
+    background-color: black;
+
+}
+
+.box3 .items {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    /* border-radius: 50%; */
+    /* transition: 2s; */
+
+}
+
+.box3 h3 {
+    color: white;
+    /* padding-left: 50px; */
+}
+
+.box3 h1 {
+    color: orange;
+    font-weight: 700;
+    /* padding-left: 50px; */
+}
+
+.box3 img {
+    border-radius: 50%;
+    border: 5px solid orange;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+
+
+
+
+}
+
+.box3 .items .darkbox {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+
+    width: 100%;
+    height: 100%;
+    color: white;
+
+
+    /* visibility: hidden; */
+
+    /* display: none; */
+}
+
+.box3 .items:hover .darkbox {
+    /* visibility: visible; */
+
+    background-color: rgba(0, 0, 0, 0.795);
+    /* display: block; */
+    transition: 1s;
+    cursor: pointer;
+    /* transition: 2s; */
+}
+
+.box3 .items .darkbox .darkboxtext {
+    display: none;
+}
+
+.box3 .items .darkbox:hover .darkboxtext {
+    display: block;
+}
+
+/* ---------------------------------------------------box4-------------------------------- */
+.box4 {
+    background-color: black;
+
+}
+
+.box4 h3 {
+    color: white;
+    /* padding-left: 50px; */
+}
+
+.box4 h1 {
+    color: orange;
+    font-weight: 700;
+    /* padding-left: 50px; */
+}
+
+.box4 .imgboxes {
+    position: relative;
+}
+
+.box4 .imgboxes img {
+
+    width: 100%;
+}
+
+.box4 .imgboxes .imghover {
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    bottom: 0px;
+    /* background-color: rgba(247, 247, 17, 0.712); */
+    background: linear-gradient(to top, rgba(255, 166, 0, 0.938), rgba(255, 166, 0, 0.664));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* visibility: hidden; */
+
+}
+
+.box4 .imgboxes .imghover h3 {
+    color: black;
+}
+
+.box4 .imgboxes .imghover h4 {
+    background-color: black;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.box4 .imgboxes .imghover h4 i {
+    color: white;
+}
+
+.box4 .imgboxes .imghover h4 a:link {
+    color: white;
+}
+
+.box4 .imgboxes .imghover h4 a:visited {
+    color: white;
+}
+
+.box4 .imgboxes:hover .imghover {
+    /* visibility: visible; */
+    height: 100%;
+    transition: 1s;
+
+}
+
+
+
+.box4 .items h3 {
+    color: orange;
+    margin-left: 10px;
+}
+
+.box4 .items p {
+    margin-left: 10px;
+    color: white;
+}
+
+.box4 .items p i {
+    color: yellow;
+}
+
+.box4 .column {
+
+    border-bottom: 5px solid rgba(255, 166, 0, 0.644);
+
+
+}
+
+/* ------------------------------------------------box5------------------------------ */
+.box5 {
+    color: white;
+}
+
+.box5 h1 {
+    color: white;
+}
+
+.box5 .leftbox p {
+    margin-top: 30px;
+}
+
+.box5 i {
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+
+
+
+.box5 .rightbox form input {
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 7px;
+    background-color: rgba(36, 35, 35, 0.774);
+    color: white;
+    border: none;
+    padding-left: 10px;
+}
+
+.box5 .rightbox form textarea {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 7px;
+    padding: 0px;
+    text-align: left;
+    background-color: rgba(36, 35, 35, 0.774);
+    color: white;
+    border: none;
+    padding-left: 10px;
+}
+
+.box5 .rightbox form button {
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 7px;
+    background-color: yellow;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    border: none;
+    color: maroon;
+}
+
+/*---------------------------------------footer---------------------------------*/
+footer {}
+
+.copyright {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    width: 100%;
+   
+}
+
+.copyright .leftbox p{
+ cursor: pointer;
+}
+
+.copyright .rightbox i {
+    font-size: 1.2rem;
+    padding: 5px;
+    cursor: pointer;
+}
