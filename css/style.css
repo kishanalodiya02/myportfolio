@@ -440,6 +440,10 @@ span {
     color: maroon;
 }
 
+@media(max-width:990px){
+    .box2 .leftbox img{display:none;}
+}
+
 /* ---------------------------------------------------box3-------------------------------- */
 .box3 {
     background-color: black;
